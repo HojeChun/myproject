@@ -1,0 +1,23 @@
+[tool.poetry]
+authors = ["HojeChun <hoje.chun316@gmail.com>"]
+description = ""
+name = "myproject"
+version = "0.1.0"
+
+[tool.poetry.dependencies]
+click = "^8.0.3"
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+black = "^22.1.0"
+flake8 = "^4.0.1"
+isort = "^5.10.1"
+mypy = "^0.931"
+pytest = "^5.2"
+
+[tool.poetry.scripts]
+add_two = "myproject.app:add_two"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
